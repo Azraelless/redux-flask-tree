@@ -1,0 +1,10 @@
+.branchChildren {
+  left: 20px;
+  position: relative;
+}
+
+.icon {
+  display:inline-block;
+  width: 20px;
+  padding-right: 10px;
+}
