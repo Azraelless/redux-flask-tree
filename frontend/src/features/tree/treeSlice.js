@@ -40,7 +40,7 @@ export const treeSlice = createSlice({
             // create each child
             state[branch.id] = { name: branch.name, open: false }
             // if there is a parent - assign the child to him
-            parentId && state[parentId].children.push(branch.id)
+            if (parentId) state[parentId].children.push(branch.id)
           });
         }
       });

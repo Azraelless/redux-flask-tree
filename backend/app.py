@@ -33,7 +33,7 @@ ma = Marshmallow(app)
 
 
 @app.route('/')
-@cache.cached(timeout=50)
+@cache.cached(timeout=50, query_string=True)
 @cross_origin()
 def tree():
     id = request.args.get('id')
